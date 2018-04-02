@@ -36,18 +36,18 @@
   <link rel="shorticon icon" type="image/x-icon" href="/images/favicon.png?v=0.4.5.1" />
 
 
-<meta name="description" content="连接MySQL服务器mysql -u root -p 查看当前服务器存在的库show databases; 创建数据库create database xxx(数据库名); 选择库use xxx(数据库名); 查看当前库下的表show tables; 删除数据库drop database xxx(数据库名); 在数据库下创建表create table xxx(表名) （age(键名) int(值类">
+<meta name="description" content="入门语句 连接MySQL服务器mysql -u root -p 查看当前服务器存在的库show databases; 创建数据库create database xxx(数据库名); 选择库use xxx(数据库名); 查看当前库下的表show tables; 删除数据库drop database xxx(数据库名); 在数据库下创建表create table xxx(表名) （age(键名) in">
 <meta name="keywords" content="java,数据库,mysql">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据库">
 <meta property="og:url" content="http://yoursite.com/2016/06/18/database/index.html">
 <meta property="og:site_name" content="aCandy&#39;s blog">
-<meta property="og:description" content="连接MySQL服务器mysql -u root -p 查看当前服务器存在的库show databases; 创建数据库create database xxx(数据库名); 选择库use xxx(数据库名); 查看当前库下的表show tables; 删除数据库drop database xxx(数据库名); 在数据库下创建表create table xxx(表名) （age(键名) int(值类">
+<meta property="og:description" content="入门语句 连接MySQL服务器mysql -u root -p 查看当前服务器存在的库show databases; 创建数据库create database xxx(数据库名); 选择库use xxx(数据库名); 查看当前库下的表show tables; 删除数据库drop database xxx(数据库名); 在数据库下创建表create table xxx(表名) （age(键名) in">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-01T15:19:25.658Z">
+<meta property="og:updated_time" content="2018-04-02T14:41:05.621Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据库">
-<meta name="twitter:description" content="连接MySQL服务器mysql -u root -p 查看当前服务器存在的库show databases; 创建数据库create database xxx(数据库名); 选择库use xxx(数据库名); 查看当前库下的表show tables; 删除数据库drop database xxx(数据库名); 在数据库下创建表create table xxx(表名) （age(键名) int(值类">
+<meta name="twitter:description" content="入门语句 连接MySQL服务器mysql -u root -p 查看当前服务器存在的库show databases; 创建数据库create database xxx(数据库名); 选择库use xxx(数据库名); 查看当前库下的表show tables; 删除数据库drop database xxx(数据库名); 在数据库下创建表create table xxx(表名) （age(键名) in">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -206,7 +206,7 @@
       
 
       
-        <span itemprop="articleBody"><ul>
+        <span itemprop="articleBody"><h2 id="入门语句"><a href="#入门语句" class="headerlink" title="入门语句"></a>入门语句</h2><ul>
 <li>连接MySQL服务器<br>mysql -u root -p</li>
 <li>查看当前服务器存在的库<br>show databases;</li>
 <li>创建数据库<br>create database xxx(数据库名);</li>
@@ -214,6 +214,10 @@
 <li>查看当前库下的表<br>show tables;</li>
 <li>删除数据库<br>drop database xxx(数据库名);</li>
 <li>在数据库下创建表<br>create table xxx(表名) （<br>age(键名) int(值类型),<br>name varchar(20),<br>demo int);</li>
+<li>修改表名（数据库名不能更改，表名可以更改）<br>rename table demo(旧表名) to test(新表名);</li>
+<li>删除表<br>drop table xxx(表名);</li>
+<li>获取表结构<br>desc xxx(表名);<h2 id="增删改查语句"><a href="#增删改查语句" class="headerlink" title="增删改查语句"></a>增删改查语句</h2></li>
+<li>插入数据<br>insert into xxx(表名)<br>(xxx,xxx,xxx)(键名)<br>values<br>(xxx,xxx,xxx)(值);    例如：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">insert into demo</span><br><span class="line">(name,age,sex)</span><br><span class="line">values</span><br><span class="line">(<span class="string">'aCandy'</span>,<span class="number">10</span>,<span class="string">'woman'</span>);</span><br></pre></td></tr></table></figure></li>
 </ul>
 </span>
       
@@ -346,7 +350,7 @@
           <div class="post-toc">
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#入门语句"><span class="nav-number">1.</span> <span class="nav-text">入门语句</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#增删改查语句"><span class="nav-number">2.</span> <span class="nav-text">增删改查语句</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
